@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Huff Puff - الصفحة الرئيسية</title>
+
+		<link rel="stylesheet" href="static/style/master.css">
+		<link rel="stylesheet" href="static/style/reservation.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div>
+					<button onclick="toggleNavbar()"><i class="fa-solid fa-bars"></i></button>
+				</div>
+				<div id="logo">
+					<a href="/"><img src="static/img/logo.jpg" alt="Huff Puff" /></a>
+				</div>
+				<nav id="nav-links">
+					<a href="/menu">المنيو</a>
+					<a href="/reservation">أحجز الآن</a>
+					<a href="/order">أطلب الآن</a>
+				</nav>
+				<div>
+					<a href="https://www.facebook.com/HuffPuff1"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://www.instagram.com/huffpuff.restaurant_/"><i class="fa-brands fa-instagram"></i></a>
+				</div>
+			</div>
+		</header>
+		<section id="reservation">
+			<h1>احجز الأن</h1>
+			<div class="field">
+				<label for="name">الإسم</label>
+				<input id="name" type="text" name="name" placeholder="محمد أحمد">
+			</div>
+			<div class="field">
+				<label for="name">عدد الافراد</label>
+				<div id="number">
+					<button onclick="add()"><i class="fa-solid fa-arrow-right"></i></button>
+					<p id="amount">2</p>
+					<button onclick="remove()"><i class="fa-solid fa-arrow-left"></i></button>
+				</div>
+			</div>
+			<div class="field">
+				<label for="name">الميعاد</label>
+				<input type="datetime-local" name="Test" id="test" >
+			</div>
+			<button type="submit">احجز الآن</button>
+		</section>
+		<footer>
+			<div>
+				<a href="/"><img src="static/img/logo.jpg" /></a>
+			</div>
+			<div>
+				<a href="https://maps.app.goo.gl/CFXwjFzAcMdtkqYh8"><i class="fa-solid fa-location-dot"></i> المحلة الكبرى, شارع المطاعم</a>
+				<a href="tel:+20402258181"><i class="fa-solid fa-phone"></i> 0402258181</a>
+			</div>
+			<div>
+				<p>Created by</p>
+				<a href="https://twoaxis.xyz"><img src="static/img/twoaxis.png" /></a>
+			</div>
+			<p id="copyright">(c) هف بف 2024. حقوق  النشر محفوظة.</p>
+		</footer>
+		<script src="static/js/navbar.js"></script>
+		<script src="static/js/reservation.js"></script>
+	</body>
+</html>
